@@ -1,0 +1,9 @@
+class PriceConverter {
+  convert(price) {
+    return '₹ ' + double.parse('$price').toStringAsFixed(2);
+  }
+
+  convertRound(price) {
+    return '₹ ' + double.parse('$price').toInt().toString();
+  }
+}
